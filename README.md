@@ -10,7 +10,7 @@ Tive a ideia de recriar esse efeito de gavetas que vi em um site chamdo [coolors
 
 ### Vamos começar:
 
-Crie um arquivo html, css, e javascript, não esqueça de importar o JAVASCRIPT e CSS dentro html. No html vamos criar uma tag div com o ID colors, que será onde injetamos as cores.
+Crie um arquivo html, css, e javascript, não esqueça de importar o JAVASCRIPT e CSS dentro html. No html vamos criar uma tag div com o __ID coolors__, que será onde injetamos as cores.
 
 ```html
     <body>
@@ -176,6 +176,17 @@ Agora vem a parte mais simples! Colocar o código dentro delas. Separada por sua
 })();
 ```
 
+Agora você pode desfrutar desse super poder em sueus projetos. E assim acabamos por aqui!
+
 ### Como ajudar?
 
-[...]
+- Erros gramaticais sempre acabam surjindo no __README.md__, e caso encontre algum pode mandar a correção por aqui mesmo. Fivarei muito feliz. Obrigado!
+
+### Desafios:
+
+Eu queria deixar dois desafios para quem cehgou até aqui:
+ 
+- 1 Fazer a sua versão de alguma outra forma. Por exemplo eu usei o forEach() você pode fazer com um map() ou até mesmo com um for comum, fica o desafio!
+- 2 Aplicar isso em algum projeto que seja interessante ter esse tipo de efeito como um e-commerce.
+
+> Não esqueça de fazer um fork e me mandar seu pull request fechado?
