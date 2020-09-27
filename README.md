@@ -4,13 +4,13 @@
 
 ## Como fazer o efeito de gavetas?
 
-Eu resolvi criar esse repositório para ajudá-los, a entender alguns conceitos de javascript, e css, que em minha opinião são muito importantes e úteis.
+Eu resolvi criar esse repositório para ajudá-los a entender alguns conceitos de JavaScript, e CSS, que em minha opinião são muito importantes e úteis.
 
-Tive a ideia de recriar esse efeito de gavetas que vi em um site chamdo [coolors](https://coolors.co/palettes/trending). O site tem várias paletas de cores, que eu uso em meus projetos recomendo!
+Tive a ideia de recriar esse efeito de gavetas que vi em um site chamdo [coolors](https://coolors.co/palettes/trending). O site tem várias paletas de cores, que eu uso em meus projetos e recomendo!
 
 ### Vamos começar:
 
-Crie um arquivo html, css, e javascript, não esqueça de importar o JAVASCRIPT e CSS dentro html. No html vamos criar uma tag div com o __ID coolors__, que será onde injetamos as cores.
+Crie um arquivo html, css, e javascript, não esqueça de importar o JAVASCRIPT e CSS dentro do html. No html vamos criar uma tag div com o __ID coolors__, que será onde injetaremos as cores.
 
 ```html
     <body>
@@ -18,7 +18,7 @@ Crie um arquivo html, css, e javascript, não esqueça de importar o JAVASCRIPT 
     </body>
 ```
 
-Agora no arquivo CSS, vamos remover alguns comportamentos do navegador, como _margin_ e _padding_. E no body do html, vamos centralizar tudo, e colocar uma cor de fundo, um background com uma cor whitesmoke(Branco claro).
+Agora no arquivo CSS, vamos remover alguns comportamentos do navegador, como _margin_ e _padding_. E no body do html, vamos centralizar tudo, e colocar uma cor de fundo, um background com uma cor whitesmoke (Branco claro).
 
 ```css
     * {
@@ -37,7 +37,7 @@ Agora no arquivo CSS, vamos remover alguns comportamentos do navegador, como _ma
     }
 ```
 
-E também precisamos estilizar a tag div que criamos. Para isso selecionamos a tag  __#collors__ e definimos uma largura e altura, um padding e uma cor de fundo. Agora vamos estilizar as gavetas são onde ficam cada umas das cores, para isso pegamos cada uma das divs __#coolors div__, e serão injetadas pelo javascript e definimos um padrão, como altura largura e mudamos o cursor do mouse. Note que se fizer isso sua página não mudará, pois não injetamos as divs com as cores.
+E também precisamos estilizar a tag div que criamos. Para isso selecionamos a tag  __#collors__ e definimos uma largura e altura, um padding e uma cor de fundo. Agora vamos estilizar as gavetas são onde ficam cada umas das cores, para isso pegamos cada uma das divs __#coolors div__, e serão injetadas pelo javascript e definimos um padrão, como altura/largura e mudamos o cursor do mouse. Note que se fizer isso sua página não mudará, pois não injetamos as divs com as cores.
 
 ```css
     #coolors {
@@ -76,7 +76,7 @@ Precisamos pegar a div que criamos no html, para isso eu irei usar o querySelect
     const $coolors = document.querySelector('#coolors');
 ```
 
-A parte mais importante na minha opinião, é se você adicionar mais de 5 cores no array __allColors__ seu código não vai quebrar, pois ele conta o total do array, que no meu caso foi 5 itens, e faz um for por casa um deles. Agora para cada loop que ele faz ele injeta uma div dentro da teg.
+A parte mais importante na minha opinião, é se você adicionar mais de 5 cores no array __allColors__ seu código não vai quebrar, pois ele conta o total do array, que no meu caso foi 5 itens, e faz um for por cada um deles. Agora para cada loop que ele faz ele injeta uma div dentro da teg.
 
 ```javascript
     allColors.forEach(() => {
@@ -84,13 +84,13 @@ A parte mais importante na minha opinião, é se você adicionar mais de 5 cores
     })
 ```
 
-Infelizmente você ainda não vai ver diferença alguma. Mas se abrir o devTools do seu navegador favorito, eu espero que seja o FireFox. Então perceba que apareceu 5 divs lá dentro. Interessante, não?
+Infelizmente você ainda não vai ver diferença alguma. Mas se abrir o devTools do seu navegador favorito, eu espero que seja o Firefox. Então perceba que apareceu 5 divs lá dentro. Interessante, não?
 
 <p align="center"> 
     <img src="./img/devTools.png">
 </p>
 
-Agora vamos colorir cada uma dessas divs e é nessa hora que sua mente abre. Como é que se pega cada uma dessas divs, sem ter umas "trinta mil" linhas de código? Fácil se o querySelector() pega apenas o primeiro item que encontrar o querySelectorAll() pega todas, e salva em um array. E como eu mostrei agora pouco, podemos usar o __forEach()__ para interar em um arrey e colorir nossas divs.
+Agora vamos colorir cada uma dessas divs e é nessa hora que sua mente abre. Como é que se pega cada uma dessas divs, sem ter umas "trinta mil" linhas de código? Fácil! Se o querySelector() pega apenas o primeiro item que encontrar, o querySelectorAll() pega todas e salva em um array. E como eu mostrei agora pouco, podemos usar o __forEach()__ para interar em um array e colorir nossas divs.
 
 ```javascript
     // Pega todas as divs dentro da div#coolors e retorna um array com cada uma.
@@ -176,7 +176,7 @@ Agora vem a parte mais simples! Colocar o código dentro delas. Separada por sua
 })();
 ```
 
-Agora você pode desfrutar desse super poder em sueus projetos. E assim acabamos por aqui!
+Agora você pode desfrutar desse super poder em seus projetos. E assim acabamos por aqui!
 
 ### Como ajudar?
 
@@ -189,4 +189,5 @@ Eu queria deixar dois desafios para quem cehgou até aqui:
 - 1 Fazer a sua versão de alguma outra forma. Por exemplo eu usei o forEach() você pode fazer com um map() ou até mesmo com um for comum, fica o desafio!
 - 2 Aplicar isso em algum projeto que seja interessante ter esse tipo de efeito como um e-commerce.
 
-> Não esqueça de fazer um fork e me mandar seu pull request fechado?
+
+> Não esqueça de fazer um fork e me mandar seu pull request, fechado?
