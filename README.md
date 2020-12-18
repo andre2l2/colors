@@ -1,5 +1,7 @@
 # Efeito Gavetas
 
+[English version](./README-en.md)
+
 ![demo](./img/demo.gif)
 
 ## Como fazer o efeito de gavetas?
