@@ -1,6 +1,6 @@
-# Efeito Gavetas
+# Color-Efect
 
-[English version](./README-en.md)
+> You understend English? I create an [English version here](./README-en.md).
 
 ![demo](./img/demo.gif)
 
@@ -72,7 +72,7 @@ Vamos criar uma variável estática onde ficará todas as cores de injeção. Ca
     ];
 ```
 
-Precisamos pegar a div que criamos no html, para isso eu irei usar o querySelector() uma função interna do JS, e atribuí-lo a uma variável chamada $coolors. Uma boa prática é quando você usar variáveis que apontam para uma tag HTML usar um $ na frente. Pois facilita a leitura do seu código e futuras manutenções. E se você já usa __jQuery__ já sabe do que estou falando. 
+Precisamos pegar a _div_ que criamos no html, para isso eu irei usar o _querySelector()_ uma função interna do JS, e atribuí-lo a uma variável chamada $coolors. Uma boa prática é quando você usar variáveis que apontam para uma tag HTML usar um $ na frente. Pois facilita a leitura do seu código e futuras manutenções. E se você já usa __jQuery__ já sabe do que estou falando. 
 
 ```javascript 
     const $coolors = document.querySelector('#coolors');
@@ -92,7 +92,7 @@ Infelizmente você ainda não vai ver diferença alguma. Mas se abrir o devTools
     <img src="./img/devTools.png">
 </p>
 
-Agora vamos colorir cada uma dessas divs e é nessa hora que sua mente abre. Como é que se pega cada uma dessas divs, sem ter umas "trinta mil" linhas de código? Fácil! Se o querySelector() pega apenas o primeiro item que encontrar, o querySelectorAll() pega todas e salva em um array. E como eu mostrei agora pouco, podemos usar o __forEach()__ para interar em um array e colorir nossas divs.
+Agora vamos colorir cada uma dessas divs e é nessa hora que sua mente abre. Como é que se pega cada uma dessas divs, sem ter umas "trinta mil" linhas de código? Fácil! Se o _querySelector()_ pega apenas o primeiro item que encontrar, o _querySelectorAll()_ pega todas e salva em um array. E como eu mostrei agora pouco, podemos usar o __forEach()__ para interar em um array e colorir nossas divs.
 
 ```javascript
     // Pega todas as divs dentro da div#coolors e retorna um array com cada uma.
