@@ -1,0 +1,22 @@
+{
+  "name": "colors",
+  "version": "1.0.0",
+  "description": "> You understend English? I create an [English version here](./README-en.md).",
+  "main": "script.js",
+  "scripts": {
+    "start": "bash ./hi.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andre2l2/colors.git"
+  },
+  "keywords": [
+    "tutorial"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andre2l2/colors/issues"
+  },
+  "homepage": "https://github.com/andre2l2/colors#readme"
+}
