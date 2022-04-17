@@ -1,6 +1,6 @@
 {
   "name": "colors",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "> You understend English? I create an [English version here](./README-en.md).",
   "main": "script.js",
   "scripts": {
