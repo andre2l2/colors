@@ -2,15 +2,15 @@
 
 ![demo](./img/demo.gif)
 
-I decided to create this repository for help you to understand some concepts in JavaScript, and CSS, that in my opinion are very importent and useful.
+I decided to create this repository for help you to understand some concepts in JavaScript and CSS, that in my opinion are very importent and useful.
 
-English is not my native language, so sorry for grammatical errors. But you can help-me?!
+English is not my native language, sorry for grammatical errors. But you can help-me?!
 
-I have a idea of created this efect _color_ that see in web site called [coolors](https://coolors.co/palettes/trending). This web site have many color palets, that I use on my projects, recommend it.
+I have a idea of created this efect _color_ in a web site called [coolors](https://coolors.co/palettes/trending). This site have many color palets, that I use in my projects, I recommend for you.
 
 ## Let's Started
 
-Create a file html, css and javascript, do not fotget import the _JS_ and _CSS_ inside of html. In html we will create a teg div with **ID coolors**, where we will inject the colors
+Create a html file, a css file and javascript file, does not fotget import the _JavaScript_ and _CSS_ files inside of the html. In html we will create a teg div with **ID coolors**, where we will inject the colors
 
 ```html
 <body>
@@ -123,42 +123,37 @@ First we going to create two functions, one for create rendering screen and anot
 What's it () => {} in code? Is a function auto executed in javascirpt. Now we going put all code inside functions render() and color.
 
 ```javascript
-    (() => {
-    const allColors = [
-        '#606c38', 
-        '#283618',
-        '#fefae0',
-        '#dda15e',
-        '#bc6c25'
-    ];
+(() => {
+  const allColors = ["#606c38", "#283618", "#fefae0", "#dda15e", "#bc6c25"];
 
-    function render() {
-        const $coolors = document.querySelector('#coolors');
+  function render() {
+    const $coolors = document.querySelector("#coolors");
 
-        allColors.forEach(() => {
-            $coolors.innerHTML += '<div></div>';
-        })
-    }
+    allColors.forEach(() => {
+      $coolors.innerHTML += "<div></div>";
+    });
+  }
 
-    function color() {
-        const $allDivColors = document.querySelectorAll('#coolors div');
+  function color() {
+    const $allDivColors = document.querySelectorAll("#coolors div");
 
-        $allDivColors.forEach((element, index) => {
-            element.style.backgroundColor = `${allColors[index]}`;
-            element.addEventListener('mousemove', () => {
-                element.style.width = '200%';
-            })
-            element.addEventListener('mouseout', () => {
-                element.style.width = '100%';
-            })
-        })
-    }
+    $allDivColors.forEach((element, index) => {
+      element.style.backgroundColor = `${allColors[index]}`;
+      element.addEventListener("mousemove", () => {
+        element.style.width = "200%";
+      });
+      element.addEventListener("mouseout", () => {
+        element.style.width = "100%";
+      });
+    });
+  }
 
-    // Called functions
-    render();
-    color();
+  // Called functions
+  render();
+  color();
 })();
 ```
+
 Now you can to get more, it's a super power rigth? It's cool! But I finish here.
 
 ### How you can help me?
